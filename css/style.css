@@ -94,6 +94,101 @@ h6 {
   font-weight: 400;
 }
 
-.mar {
-  font-size: 32px;
+body {
+  font-family: Lato;
+  background-color: #f7f7f7;
+}
+
+.wraped {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.header {
+  background: url(/images/fotos/Bysicle_01.png) 50%/cover no-repeat;
+  height: 800px;
+}
+
+.container {
+  width: 1181px;
+  margin: 0px auto;
+}
+
+.menu__row {
+  padding: 35px 0px;
+}
+
+.menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__item {
+  padding: 0px 35px 0px 35px;
+}
+
+.menu__item .menu__item:first-child {
+  padding-left: 0;
+}
+
+.menu__item .menu__item:last-child {
+  padding-right: 0;
+}
+
+.item {
+  color: #4d4959;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.6px;
+}
+
+.menu__logo {
+  margin: 0px 22px 0px 22px;
+}
+
+.generation {
+  background-color: #f7f7f7;
+  width: 1081px;
+  margin: 0px auto;
+  padding: 117px 0px 142px 0px;
+}
+
+.generation__title {
+  margin: 35px 0px;
+}
+
+.title {
+  font-size: 18px;
+  color: #353738;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3.6px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 34px;
+  text-align: center;
 }

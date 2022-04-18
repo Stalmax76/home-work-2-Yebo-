@@ -1,7 +1,99 @@
 @import "nullStyle.scss";
 
-.mar {
-   //font-family: "myriad-pro-regular", sans-serif;
-   //font-family: Lato;
-   font-size: 32px;
+//.mar {
+//   //font-family: "myriad-pro-regular", sans-serif;
+//   //font-family: Lato;
+//   font-size: 32px;
+//}
+body {
+   font-family: Lato;
+   background-color: #f7f7f7;
+}
+.wraped {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+//======================= Content ======================
+.content {
+   flex: 1 1 auto;
+}
+//=================== Header ==========================
+.header {
+   background: url(/images/fotos/Bysicle_01.png) 50% / cover no-repeat;
+   height: 800px;
+}
+.container {
+   width: 1181px;
+   margin: 0px auto;
+}
+.menu {
+}
+.menu__row {
+   padding: 35px 0px;
+}
+.menu__items {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.menu__item {
+   padding: 0px 35px 0px 35px;
+
+   .menu__item:first-child {
+      padding-left: 0;
+   }
+   .menu__item:last-child {
+      padding-right: 0;
+   }
+}
+.item {
+   color: #4d4959;
+   font-size: 13px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 2.6px;
+}
+.menu__logo {
+   margin: 0px 22px 0px 22px;
+}
+// =================== Generation ======================
+.generation {
+   background-color: #f7f7f7;
+   width: 1081px;
+   margin: 0px auto;
+   padding: 117px 0px 142px 0px;
+}
+
+.generation__body {
+}
+.title__body {
+}
+.generation__icon {
+}
+.icon {
+}
+.generation__title {
+   margin: 35px 0px;
+}
+.title {
+   font-size: 18px;
+   color: #353738;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+   letter-spacing: 3.6px;
+}
+.generation__text {
+}
+.text {
+   font-size: 18px;
+
+   line-height: 34px;
+   text-align: center;
+}
+// ============================================== Footer ======================
+.footer {
 }
