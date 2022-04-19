@@ -74,11 +74,12 @@ body {
 .generation__icon {
 }
 .icon {
+   text-align: center;
 }
 .generation__title {
-   margin: 35px 0px;
 }
 .title {
+   margin: 35px 0px;
    font-size: 18px;
    color: #353738;
    font-weight: 700;
@@ -94,6 +95,46 @@ body {
    line-height: 34px;
    text-align: center;
 }
+// =================================== Vintage ===========================
+.vintage {
+   position: relative;
+}
+.vintage__body {
+   display: flex;
+}
+.vintage__item-1 {
+   flex: 1 1 100%;
+}
+.ic {
+   position: absolute;
+   top: 50%;
+   left: 25%;
+}
+.ic img {
+   width: 100%;
+}
+.vintage__item-1 img {
+}
+.vintage__item-2 {
+   flex-direction: column;
+   justify-content: space-around;
+}
+.vintage__title {
+   flex: 1 1 auto;
+}
+
+.vintage__icon {
+}
+
+.vintage__text {
+   padding: 0px 65px 105px 65px;
+}
+.text {
+}
+.vintage__item-2-2 {
+   align-self: end;
+}
+
 // ============================================== Footer ======================
 .footer {
 }
