@@ -22,32 +22,30 @@ body {
 }
 //=================== Header ==========================
 .header {
-   background: url(/images/fotos/Bysicle_01.png) 50% / cover no-repeat;
+   background: url("/images/fotos/Bysicle_01.png") 50% / cover no-repeat;
    height: 800px;
 }
 .container {
-   width: 1181px;
+   max-width: 620px;
    margin: 0px auto;
 }
+
 .menu {
+   padding: 35px 0px 0px 0px;
+   text-align: center;
 }
-.menu__row {
-   padding: 35px 0px;
-}
-.menu__items {
-   display: flex;
-   justify-content: center;
+.items-row {
+   height: 85px;
+   display: inline-flex;
+   justify-content: space-between;
    align-items: center;
 }
-.menu__item {
-   padding: 0px 35px 0px 35px;
 
-   .menu__item:first-child {
-      padding-left: 0;
-   }
-   .menu__item:last-child {
-      padding-right: 0;
-   }
+.menu__item:first-child {
+   padding-left: 0;
+}
+.menu__item:last-child {
+   padding-right: 0;
 }
 .item {
    color: #4d4959;
@@ -55,19 +53,25 @@ body {
    font-weight: 700;
    text-transform: uppercase;
    letter-spacing: 2.6px;
+   padding: 0px 35px 0px 35px;
 }
+.item:hover {
+   text-decoration: underline;
+}
+
 .menu__logo {
    margin: 0px 22px 0px 22px;
 }
 // =================== Generation ======================
 .generation {
    background-color: #f7f7f7;
-   width: 1081px;
+   height: 600px;
    margin: 0px auto;
    padding: 117px 0px 142px 0px;
 }
 
 .generation__body {
+   margin: 0px 241px 0px 280px;
 }
 .title__body {
 }
@@ -91,50 +95,165 @@ body {
 }
 .text {
    font-size: 18px;
-
    line-height: 34px;
    text-align: center;
 }
 // =================================== Vintage ===========================
 .vintage {
-   position: relative;
+   height: 100%;
 }
 .vintage__body {
+}
+.vintage__row {
    display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
 }
-.vintage__item-1 {
-   flex: 1 1 100%;
+.vintage__row img .background {
+   width: 600px;
 }
-.ic {
+.vintage__item {
+   position: relative;
+}
+.item__with-logo {
+   flex: 1 1 65%;
+}
+.logo {
    position: absolute;
    top: 50%;
-   left: 25%;
+   left: 50%;
 }
-.ic img {
-   width: 100%;
+.logo img {
 }
-.vintage__item-1 img {
-}
-.vintage__item-2 {
+
+.item-row-with-text {
+   display: flex;
    flex-direction: column;
-   justify-content: space-around;
-}
-.vintage__title {
-   flex: 1 1 auto;
+   justify-content: space-between;
 }
 
 .vintage__icon {
 }
+.title__body {
+   position: relative;
+   background: url("/images/fotos/Bg_2.png") 50% cover no-repeat;
+   margin: 60px 0px;
+}
+
+.vintage__title {
+}
 
 .vintage__text {
-   padding: 0px 65px 105px 65px;
+   padding-bottom: 40px;
+   &:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      bottom: 0;
+      height: 1px;
+      left: 50%;
+      background-color: #353738;
+      margin: 0px 0px 0px -25px;
+   }
+}
+.text p {
+   text-align: center;
+   padding: 0px 60px;
+}
+.title__body-image {
+   align-self: start;
+   flex: 0 0 33.33%;
+}
+.title__body-image img {
+   width: 100%;
+}
+//========================================= Bariosa ===========================
+.bariosa {
+   height: 100%;
+}
+.bariosa__body {
+}
+.bariosa__row {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+.bariosa__item {
+}
+.item-row-with-text {
+}
+.title__body {
+}
+.bariosa__icon {
+}
+.icon {
+}
+.bariosa__title {
+}
+.title {
+}
+.bariosa__text {
+   padding-bottom: 40px;
+   &:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      bottom: 0;
+      height: 1px;
+      left: 50%;
+      background-color: #353738;
+      margin: 0px 0px 0px -25px;
+   }
 }
 .text {
 }
-.vintage__item-2-2 {
+.title__body-image {
+   flex: 1 1 auto;
    align-self: end;
 }
+.item__with-logo {
+   position: relative;
+}
+.backgraound {
+}
+.logo {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+}
+//============================================Retro -===============================
+.retro {
+   height: 100%;
+}
+.retro__row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.retro__item {
+   align-self: end;
+   flex: 0 0 33.333%;
+   position: relative;
+}
+.item__with-logo {
+}
+.backgraound {
+}
 
-// ============================================== Footer ======================
+.title__body {
+}
+.icon {
+}
+.title {
+}
+.vintage__text {
+}
+.text {
+}
+.title__body-image {
+}
+.image-item {
+}
+//============================================== Footer ======================
 .footer {
 }
